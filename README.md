@@ -12,7 +12,11 @@ composer require vex6/pagination
 
 ## USAGE
 
-```
+```php
+<?php
+
+use App\Cd\Pagination\Pagination;
+
 $pagination = new Pagination($data, 'home');
 $page = isset($_GET['page']) ? $_GET['page'] : 1;
 $pagination->setPerpage(4);
@@ -21,7 +25,7 @@ $pagination->setCurrentPage($page);
 
 For a simple display:
 
-```
+```php
 <ul class="pagination-items">
     <?php if($pagination->getFirstPage()):?> <li><a href="<?=$pagination->getFirstPage()?>"><<</a></li><?php endif; ?>
     <?php if($pagination->prev()):?><li><a href="<?=$pagination->prev()?>">&larr;</a></li><?php endif; ?>
@@ -32,7 +36,7 @@ For a simple display:
 
 For a complex display:
 
-```
+```html
 <ul class="pagination-items">
     <?php if($pagination->getFirstPage()):?> <li><a href="<?=$pagination->getFirstPage()?>"><<</a></li><?php endif; ?>
     <?php foreach($pagination->getPageUrls() as $link): ?>
