@@ -6,6 +6,4 @@
 .idea/
 .idea/vcs.xml
 data/
-vendor/
-composer.json
 index.php
