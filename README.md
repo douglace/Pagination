@@ -17,11 +17,13 @@ composer require vex6/pagination
 
 use App\Cd\Pagination\Pagination;
 
-$pagination = new Pagination($data, 'home');
+$pagination = new Pagination($data, 'your_site.com/home');
 $page = isset($_GET['page']) ? $_GET['page'] : 1;
 $pagination->setPerpage(4);
 $pagination->setCurrentPage($page);
 ```
+
+The `$data` is an array
 
 For a simple display:
 
