@@ -6,4 +6,5 @@
 .idea/
 .idea/vcs.xml
 data/
+vendor/
 index.php
