@@ -1,5 +1,8 @@
 {
     "name": "vex6/pagination",
+    "keywords": ["page","paging", "paginator", "pagination", "simple", "best pagination"],
+    "type": "library",
+    "license": "V6",
     "authors": [
         {
             "name": "vex6 warior",
@@ -11,5 +14,7 @@
     		"App\\Cd\\Pagination\\" : "src/pagination"
     	}
     },
-    "require": {}
+    "require": {
+      "php": ">=5.3"
+    }
 }

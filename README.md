@@ -36,9 +36,13 @@ For a simple display:
 
 For a complex display:
 
-```html
+```php
 <ul class="pagination-items">
-    <?php if($pagination->getFirstPage()):?> <li><a href="<?=$pagination->getFirstPage()?>"><<</a></li><?php endif; ?>
+    <?php if($pagination->getFirstPage()): ?> 
+     <li>
+        <a href="<?=$pagination->getFirstPage()?>"><<</a>
+     </li>
+    <?php endif; ?>
     <?php foreach($pagination->getPageUrls() as $link): ?>
         <li>
             <a href="<?=$link['link']?>"><?=$link['page']?></a>
