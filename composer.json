@@ -2,7 +2,7 @@
     "name": "vex6/pagination",
     "keywords": ["page","paging", "paginator", "pagination", "simple", "best"],
     "type": "library",
-    "license": "V6",
+    "license": "MIT",
     "authors": [
         {
             "name": "vex6 warior",
